@@ -1,0 +1,1 @@
+a:2:{i:0;a:3:{s:4:"nome";s:5:"pedro";s:5:"notas";a:3:{i:0;d:6.9;i:1;d:7.01;i:2;d:6.5;}s:5:"media";d:6.803333333333334;}i:1;a:3:{s:4:"nome";s:27:"joao victor zanoto lanzarin";s:5:"notas";a:3:{i:0;d:8;i:1;d:9;i:2;d:7;}s:5:"media";d:8;}}
