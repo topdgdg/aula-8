@@ -2,11 +2,11 @@
 $file = "agenda.txt";
 $arc = fopen("agenda.txt", "w");
 
-function lerAgenda($file) {
+function leragenda($file) {
     return file($file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 }
 
-function salvarAgenda($file, $dados) {
+function salvaragenda($file, $dados) {
     file_put_contents($file, implode("\n", $dados));
 }
 
@@ -29,7 +29,7 @@ while (true) {
 
         case 2:
             echo "Nome do contato: ";
-            $nomeBusca = trim(fgets($arc));
+            $nomebusca = trim(fgets($arc));
             $agenda = lerAgenda($file);
             $encontrado = false;
 
@@ -48,9 +48,9 @@ while (true) {
 
         case 3:
             echo "Nome do contato a excluir: ";
-            $nomeBusca = trim(fgets($arc));
+            $nomebusca = trim(fgets($arc));
             $agenda = lerAgenda($file);
-            $novaAgenda = [];
+            $novaagenda = [];
             $encontrado = false;
 
             foreach ($agenda as $linha) {
@@ -63,7 +63,7 @@ while (true) {
             }
 
             if ($encontrado) {
-                salvarAgenda($file, $novaAgenda);
+                salvaragenda($file, $novaagenda);
                 echo "Contato excluído!\n";
             } else {
                 echo "Contato não encontrado.\n";
