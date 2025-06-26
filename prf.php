@@ -4,7 +4,7 @@ $arc = fopen("prf.txt", "w");
 
 while (true) {
     echo "\n1. Cadastrar nota fiscal\n2. Consultar notas fiscais\n3. Sair\nEscolha uma opção: ";
-    $opcao = trim(fgets($handle));
+    $opcao = trim(fgets($arc));
 
     switch($opcao) {
         case 1: {
